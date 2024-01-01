@@ -1,3 +1,6 @@
+@Library('jenkins_shared_lib')_
+
+
 pipeline{
 
     agent any
@@ -10,7 +13,11 @@ pipeline{
             steps{
                 script{
 
-                    git 'https://github.com/assadaliashraf/ali_java_app.git'
+                    gitCheckout{
+                        branch: "master"
+                        url: "https://github.com/assadaliashraf/ali_java_app.git"
+
+                    }
                 }
 
 
