@@ -13,11 +13,11 @@ pipeline{
             steps{
                 script{
 
-                    gitCheckout{
+                    gitCheckout(
                         branch: "master",
                         url: "https://github.com/assadaliashraf/ali_java_app.git"
 
-                    }
+                    )
                 }
 
 
