@@ -14,7 +14,7 @@ pipeline{
                 script{
 
                     gitCheckout{
-                        branch: "master"
+                        branch: "master",
                         url: "https://github.com/assadaliashraf/ali_java_app.git"
 
                     }
